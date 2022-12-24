@@ -1,4 +1,4 @@
-# northstar-updater
+# northstar-upllers
 Two shell scripts for the TF|2 Northstar client that update/install.
 
 1. northstar-upller - latest release. This script is recommended.
