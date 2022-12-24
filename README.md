@@ -1,5 +1,5 @@
 # northstar-upllers
-Two shell scripts for the TF|2 Northstar client that update/install.
+Shell script **up**daters/insta**llers** for the TF|2 Northstar client.
 
 1. northstar-upller - latest release. This script is recommended.
 
