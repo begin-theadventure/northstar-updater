@@ -1,9 +1,9 @@
 # northstar-updater
 Two shell scripts for the TF|2 Northstar client that update/install.
 
-1. northstar-updater - latest release. This script is recommended.
+1. northstar-upller - latest release. This script is recommended.
 
-2. northstar-mods-updater - only git mods.
+2. northstar-mods-upller - only git mods.
 
 They work in the current directory so put them in the game folder. Before using, allow executing.
 
