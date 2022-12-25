@@ -7,6 +7,8 @@ echo "# Download the latest release."
 echo "# Unzip northstar.zip to northstar-upller.."
 	unzip -o northstar.zip -d northstar-upller
 
+echo "# Open northstar-upller."
+	cd northstar-upller
 echo "# Copy changed files to Titanfall2."
 	cp -r * ..
 
