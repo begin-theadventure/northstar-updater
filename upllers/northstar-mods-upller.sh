@@ -1,26 +1,30 @@
 echo "# Start."
-echo "# R5Reloaded git scripts updater/installer."
+echo "# NorthstarMods updater/installer. Place in the game directory and run."
 
-echo "# Download the scripts."
-    	curl https://github.com/Mauler125/scripts_r5/archive/refs/heads/S3_N1094.zip -Lo scripts.zip
+echo "# Download NorthstarMods."
+	curl https://github.com/R2Northstar/NorthstarMods/archive/refs/heads/main.zip -Lo northstarmods.zip
 
-echo "# Unzip the scripts."
-    	unzip -o scripts.zip
+echo "# Unzip northstar.zip and replace all files.."
+	unzip -o northstarmods.zip
 
-echo "# Create a scripts directory if it doesn't exist."
-    	mkdir -p -- ../platform/scripts
+echo "# Remove unneeded files from NorthstarMods-main"
+	cd NorthstarMods-main
+	rm .gitattributes .gitignore LICENSE README.md
+	rm -dr .github
 
-echo "# Replace the scripts with new ones."
-    	cd scripts_r5-S3_N1094
-    	cp -r * ../platform/scripts
+echo "# Create mods directory if it doesn't exist"
+	mkdir -p -- ../R2Northstar/mods
+
+echo "# Copy the updated scripts to ../R2Northstar/mods and replace the old ones..."
+	cp -r * ../R2Northstar/mods
 
 echo "# Update done! 🐸"
 
-echo "# Cleanup."
-    	cd ..
-echo "# Remove scripts.zip."
-    	rm scripts.zip
-echo "# Remove scripts_r5-S3_N1094 folder."
-    	rm -dr scripts_r5-S3_N1094
+echo "# Cleanup.."
+	cd ..
+echo "# Remove northstar.zip"
+	rm northstarmods.zip
+echo "# NorthstarMods-main"
+	rm -dr NorthstarMods-main
 
 echo "# End."
